@@ -1,0 +1,84 @@
+
+@import "theme.css";
+
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+body{
+    margin: 0;
+}
+
+.navBar{
+    position:relative;
+    
+    background: linear-gradient(to right, var(--gri-4) 36% , var(--mavi-5) 64%);
+    display: flex;
+    padding: 0.9rem;
+    top:10rem;
+    justify-content: flex-start;
+  
+    
+}
+
+.products {
+    position: absolute;
+    background-color: var(--mavi-9);
+    border-radius: 8px;
+    list-style: none;
+    left:50%;
+    top:1rem;
+    transform: translate(-50%, -50%);
+    padding:0 0.01rem;
+
+
+}
+.products li{
+    padding:0.6rem;
+    text-align: center;
+    margin: 0;
+}
+
+.prod:hover{
+    margin: 0;
+background-color: var(--mavi-5);
+transition:background-color 0.5s ease-in-out;
+border: 1px  var(--gri-10);
+border-radius: 10px;
+color:white;
+cursor: pointer;
+
+}
+.logos{
+    width: 50%;
+   
+}
+ .social{
+    text-align:right;
+}
+
+img{
+    width: 1rem;
+    height: 1rem;
+}
+
+@media screen and (min-width:700px)  {
+.navBar{
+    position:relative;
+    display: flex;
+    top:2rem
+    
+}
+.products{
+    display: flex;
+    top: 20%;
+
+    
+  
+} 
+
+.products li{
+    padding: 1.1rem;
+}
+}
